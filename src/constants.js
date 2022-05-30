@@ -1,0 +1,1 @@
+export const EARN_EMBED = "EARN_EMBED";

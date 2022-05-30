@@ -1,6 +1,19 @@
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import "../styles/EarnWithEmbed.css";
+import { getEarnData } from "../actions/embed";
+import { dummyData } from "../actions/dummy";
 
 const EarnWithEmbed = () => {
+  const embed = useSelector((state) => state.embed);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (embed?.embed?.length == 0) {
+      dispatch(getEarnData(dummyData));
+    }
+  }, [embed]);
+
   return (
     <section className="earn-with-embed_container">
       <h2 className="section-title text-center">How to earn with Embed</h2>
@@ -18,11 +31,9 @@ const EarnWithEmbed = () => {
           </div>
 
           <ol>
-            <li>Join Embed</li>
-            <li>
-              Pick and get matched with brands that resonate with the things
-              you’re passionate about
-            </li>
+            {embed?.embed[0]?.match.map((element, index) => {
+              return <li key={index}>{element}</li>;
+            })}
           </ol>
         </div>
         <div className="item">
@@ -36,18 +47,9 @@ const EarnWithEmbed = () => {
             <div className="earn-with-embed_title">Tokenize</div>
           </div>
           <ol>
-            <li>
-              Get branded NFTs that unlock rewards based on your engagement in
-              the metaverse
-            </li>
-            <li>
-              Collaborate with brands on long-lasting campaigns in the Embed
-              network
-            </li>
-            <li>
-              Connect with exclusive communities, build connections, increase
-              your impact
-            </li>
+            {embed?.embed[1]?.tokenize.map((element, index) => {
+              return <li key={index}>{element}</li>;
+            })}
           </ol>
         </div>
         <div className="item">
@@ -61,15 +63,15 @@ const EarnWithEmbed = () => {
             <div className="earn-with-embed_title">Earn</div>
           </div>
           <ol>
-            <li>Collect rewards in tokens and NFT</li>
-            <li>
-              Get extra value from exclusive communities, meta-physical events,
-              and our special offers on products/services
-            </li>
+            {embed?.embed[2]?.earn.map((element, index) => {
+              return <li key={index}>{element}</li>;
+            })}
           </ol>
         </div>
       </div>
-      <p style={{ marginBottom: '60px' }} className="text-center bold">Be part of the alpha launch</p>
+      <p style={{ marginBottom: "60px" }} className="text-center bold">
+        Be part of the alpha launch
+      </p>
       <div className="module-border-wrap cp m-auto">
         <div className="module d-flex flex-row jcbtw">
           Join waitlist
