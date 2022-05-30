@@ -26,7 +26,7 @@ const HomeVideo = () => {
             their portfolio into a yielding asset.We create passion-based
             communities.
           </p>
-          <div className="module-border-wrap cp">
+          <div className="module-border-wrap cp m-auto">
             <div className="module d-flex flex-row jcbtw">
               Join waitlist
               <img src="images/home_video/right_arrow.svg" alt="Right arrow" title="Right arrow" />

@@ -1,9 +1,10 @@
 :root {
   --mobile-nav-padding: 25px;
-  --desktop-nav-padding: 42px;
+  --desktop-nav-padding: 42px 112px 25px 42px;
   --mid-purple: #747ffe;
   --white-color: #fff;
   --brand-blue: #16bbfd;
+  --section-mobile-spacing: 82px;
   --blue-color: #00b6ff;
 }
 
@@ -50,7 +51,6 @@ body {
   padding: 4px;
   border-radius: 10px;
   width: 220px;
-  margin: 0 auto;
 }
 
 .module {
@@ -58,4 +58,18 @@ body {
   color: var(--brand-blue);
   padding: 17px 21px;
   border-radius: inherit;
+}
+
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52.8px;
+}
+
+
+@media(max-width: 1024px) {
+  .section-title  {
+    font-size: 32px;
+  }
 }

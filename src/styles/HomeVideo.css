@@ -49,6 +49,9 @@
   .home-main-title, .home-subtitle {
     padding: 0 10px;
   }
+  .home_border {
+    display: none;
+  }
 } 
 
 
