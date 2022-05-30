@@ -2,7 +2,7 @@ import "../styles/HomeVideo.css";
 
 const HomeVideo = () => {
   return (
-    <section className="pr home-video">
+    <section id="home" className="pr home-video">
       <video autoPlay loop>
         <source src="/videos/nft-collectors.mp4" type="video/mp4"></source>
       </video>

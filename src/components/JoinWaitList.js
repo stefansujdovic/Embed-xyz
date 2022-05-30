@@ -2,7 +2,7 @@ import "../styles/JoinWaitList.css";
 
 const JoinWaitList = () => {
   return (
-    <section className="pr">
+    <section id="join" className="pr">
       <img
         src="/images/join_waitlist/neon-nightclub.jpg"
         width={"100%"}

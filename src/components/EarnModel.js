@@ -2,7 +2,7 @@ import "../styles/EarnModel.css";
 
 const EarnModel = () => {
     return (
-        <section className="earn-model-container">
+        <section id="earn" className="earn-model-container">
             <h3 className="section-title text-center">The Embed-to-Earn Model</h3>
 
             <img

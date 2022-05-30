@@ -4,7 +4,7 @@ import leadTheChangeImage from "../nft-montage-earn.gif";
 
 const LeadTheChange = () => {
   return (
-    <section className="lead-change_container">
+    <section id="leadChange" className="lead-change_container">
       <div className="first_container">
         <h3 className="section-title">Lead the change</h3>
         <p>

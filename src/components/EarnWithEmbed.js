@@ -15,7 +15,7 @@ const EarnWithEmbed = () => {
   }, [embed]);
 
   return (
-    <section className="earn-with-embed_container">
+    <section id="promote" className="earn-with-embed_container">
       <h2 className="section-title text-center">How to earn with Embed</h2>
       <p className="text-center">Three simple steps to get your started.</p>
       <div className="item_container">

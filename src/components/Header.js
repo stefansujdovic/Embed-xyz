@@ -42,7 +42,7 @@ const Header = () => {
               <nav>
                 <ul>
                   <li>Home</li>
-                  <li className="active">Earn</li>
+                  <li>Earn</li>
                   <li>Promote</li>
                   <li>Join Waitlist</li>
                 </ul>
@@ -71,10 +71,18 @@ const Header = () => {
           <img src="/images/desktop_nav/logo.svg" alt="Logo" title="Logo" />
           <nav>
             <ul className="desktop-item-container">
-              <li>Home</li>
-              <li className="active">Earn</li>
-              <li>Promote</li>
-              <li>Join Waitlist</li>
+              <a className="nav_href" href="#home">
+                <li>Home</li>
+              </a>
+              <a className="nav_href" href="#earn">
+                <li>Earn</li>
+              </a>
+              <a className="nav_href" href="#promote">
+                <li>Promote</li>
+              </a>
+              <a className="nav_href" href="#join">
+                <li>Join Waitlist</li>
+              </a>
             </ul>
           </nav>
         </section>

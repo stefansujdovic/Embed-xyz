@@ -45,6 +45,10 @@
   }
 }
 
+.desktop-item-container li:hover, .mobile-item-container li:hover {
+  color: var(--mid-purple) !important;
+} 
+
 .mobile-item-container {
   position: fixed;
   top: 0;
@@ -77,4 +81,9 @@
   width: 200px;
   display: flex;
   justify-content: space-between;
+}
+
+.nav_href {
+  text-decoration: none;
+  color: black;
 }
