@@ -1,9 +1,10 @@
 import Layout from "../src/components/Layout"
+import HomeVideo from "./components/HomeVideo"
 
 function App() {
   return (
     <Layout>
-      <p>eeeeeeeeeee</p>
+      <HomeVideo />
     </Layout>
   );
 }

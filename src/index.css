@@ -1,7 +1,8 @@
 :root {
   --mobile-nav-padding: 25px;
   --desktop-nav-padding: 42px;
-  --mid-purple: #747FFE;
+  --mid-purple: #747ffe;
+  --white-color: #fff;
 }
 
 body {
@@ -18,7 +19,11 @@ code {
     monospace;
 }
 
-
 .cp {
   cursor: pointer;
 }
+
+.pr {
+  position: relative;
+}
+
