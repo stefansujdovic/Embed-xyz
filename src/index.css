@@ -3,6 +3,8 @@
   --desktop-nav-padding: 42px;
   --mid-purple: #747ffe;
   --white-color: #fff;
+  --brand-blue: #16bbfd;
+  --blue-color: #00b6ff;
 }
 
 body {
@@ -12,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Readex Pro", sans-serif;
 }
 
 code {
@@ -27,3 +30,42 @@ code {
   position: relative;
 }
 
+.m0 {
+  margin: 0px;
+}
+
+.mb2 {
+  margin-bottom: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.jcbtw {
+  justify-content: space-between;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.module-border-wrap {
+  position: relative;
+  background: linear-gradient(90deg, #f059fc, #00b6ff);
+  padding: 4px;
+  border-radius: 10px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.module {
+  background: #fff;
+  color: var(--brand-blue);
+  padding: 17px 21px;
+  border-radius: inherit;
+}
