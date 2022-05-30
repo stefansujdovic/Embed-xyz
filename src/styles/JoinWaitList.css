@@ -1,0 +1,16 @@
+.join-waitlist_container {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+
+.join-waitlist_container .section-title {
+  color: var(--white-color);
+}
+
+@media (max-width: 1024px) {
+  .join-waitlist_image {
+      height: 500px;
+      object-fit: cover;
+  }
+}
