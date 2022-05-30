@@ -32,6 +32,10 @@ body {
   margin: 0px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .mb2 {
   margin-bottom: 10px;
 }
