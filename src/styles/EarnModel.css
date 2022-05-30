@@ -1,0 +1,34 @@
+.earn-model-container {
+  background: linear-gradient(
+    90deg,
+    var(--gradient-first-color) -0.05%,
+    var(--gradient-second-color) 94.34%
+  );
+  padding: var(--desktop-nav-padding);
+}
+
+.earn-model-container .section-title {
+  color: var(--white-color);
+}
+
+.earn-model-mobile {
+  display: none;
+}
+
+.earn-model-destkop {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .earn-model-container {
+    padding: var(--mobile-nav-padding);
+  }
+
+  .earn-model-destkop {
+    display: none;
+  }
+
+  .earn-model-mobile {
+    display: block;
+  }
+}

@@ -6,6 +6,9 @@
   --brand-blue: #16bbfd;
   --section-mobile-spacing: 82px;
   --blue-color: #00b6ff;
+
+  --gradient-first-color: #f059fc;
+  --gradient-second-color: #00b6ff;
 }
 
 body {
@@ -19,6 +22,10 @@ body {
 
 .pr {
   position: relative;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .m0 {
@@ -47,7 +54,7 @@ body {
 
 .module-border-wrap {
   position: relative;
-  background: linear-gradient(90deg, #f059fc, #00b6ff);
+  background: linear-gradient(90deg, var(--gradient-first-color), var(--gradient-second-color));
   padding: 4px;
   border-radius: 10px;
   width: 220px;
