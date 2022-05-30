@@ -4,7 +4,7 @@
     var(--gradient-first-color) -0.05%,
     var(--gradient-second-color) 94.34%
   );
-  padding: var(--desktop-nav-padding);
+  padding: 250px 0;
 }
 
 .earn-model-container .section-title {
